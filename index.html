@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BAPBAP Concours</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body onload="winCheck()">
+    <div class="main-container">
+        <div class="logo-container">
+            <img src="assets/pics/bapbap_logo.png" alt="bapbap">
+        </div>
+        <div class="fb-container">
+            <div class="fb-page" data-href="https://www.facebook.com/MaisonBAPBAP" data-tabs="timeline" data-width="500"
+                data-height="" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false"
+                data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/MaisonBAPBAP" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/MaisonBAPBAP">Maison BAP BAP</a></blockquote>
+            </div>
+        </div>
+        <p class="main-text">Pour participer et gagner 3 bières de notre sélection, likez notre page Facebook BAPBAP et
+            remplissez le
+            questionnaire
+            ci-dessous</p>
+        <p class="sub-text">Remplissez et découvrez immédiatement ce que vous avez gagné.</p>
+        <form class="user-form" action="win.html">
+            <div class="form-content">
+                <div class="label-container">
+                    <label for="surname">Nom :</label>
+                    <label for="name">Prénom :</label>
+                    <label for="email">E-mail :</label>
+                    <label for="birthday">Date de naissance :</label>
+                    <label for="captcha">Combien font 8 + 5 ?</label>
+                </div>
+                <div class="input-container">
+                    <input id="surname" type="text" required>
+                    <input id="name" type="text" required>
+                    <input id="email" type="email" required>
+                    <input id="birthday" type="date" required>
+                    <input id="captcha" type="number" required>
+                </div>
+            </div>
+            <input class="form-button" type="submit" value="Valider">
+
+        </form>
+    </div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v9.0"
+        nonce="Tv1KaX6A"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
